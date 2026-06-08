@@ -2,6 +2,10 @@
 import AppFooter from '@/components/AppFooter.vue'
 import AppNavbar from '@/components/AppNavbar.vue'
 import HeroSection from '@/components/HeroSection.vue'
+import AboutSection from '@/components/AboutSection.vue'
+import SkillsSection from '@/components/SkillsSection.vue'
+import ProjectSection from '@/components/ProjectSection.vue'
+import ContactSection from '@/components/ContactSection.vue'
 </script>
 
 <template>
@@ -12,6 +16,11 @@ import HeroSection from '@/components/HeroSection.vue'
 
     <main class="grow">
       <HeroSection id="home" />
+      <AboutSection id="about" />
+      <ServicesSection id="services" />
+      <SkillsSection id="skills" />
+      <ProjectSection id="projects" />
+      <ContactSection id="contact" />
     </main>
 
     <AppFooter />
