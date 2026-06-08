@@ -33,7 +33,7 @@ import heroBg from '@/assets/images/hero-bg.jpg'
 
         <div class="pt-3">
           <a
-            href="/assets/pdfs/CV.pdf"
+            href="/assets/pdfs/Marina-Dantis-CV.pdf"
             download="Marina-Dantis-CV.pdf"
             class="inline-flex transform items-center gap-1 rounded-xl bg-linear-to-r from-blue-500 via-cyan-400 to-teal-400 px-6 py-3 text-sm font-semibold text-white transition-all duration-100 ease-out hover:scale-105 active:scale-95"
           >
