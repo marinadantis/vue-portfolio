@@ -6,7 +6,7 @@ import HeroSection from '@/components/HeroSection.vue'
 
 <template>
   <div
-    class="flex min-h-screen flex-col justify-between bg-[url('/images/dark-background.jpg')] bg-cover bg-center text-white selection:bg-cyan-500/30 selection:text-cyan-200"
+    class="flex min-h-screen flex-col justify-between bg-neutral-900 text-white selection:bg-cyan-500/30 selection:text-cyan-200"
   >
     <AppNavbar />
 
