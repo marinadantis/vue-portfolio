@@ -4,7 +4,7 @@ import AppNavbar from '@/components/AppNavbar.vue'
 import HeroSection from '@/components/HeroSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
-import ProjectSection from '@/components/ProjectSection.vue'
+import ProjectsSection from '@/components/ProjectsSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
 </script>
 
@@ -19,7 +19,7 @@ import ContactSection from '@/components/ContactSection.vue'
       <AboutSection id="about" />
       <ServicesSection id="services" />
       <SkillsSection id="skills" />
-      <ProjectSection id="projects" />
+      <ProjectsSection id="projects" />
       <ContactSection id="contact" />
     </main>
 
