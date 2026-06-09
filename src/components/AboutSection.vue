@@ -7,7 +7,7 @@ import { CONTACT_LINK } from '@/constants/navigation'
     class="relative flex min-h-fit items-center justify-center py-22 md:min-h-screen md:py-0 md:pt-28 lg:pt-24 2xl:pt-0"
   >
     <div
-      class="mx-auto flex max-w-5xl flex-col items-center gap-4 p-4 lg:flex-row lg:gap-16 2xl:gap-20"
+      class="mx-auto flex max-w-5xl flex-col items-center gap-2 p-4 lg:flex-row lg:gap-16 2xl:gap-20"
     >
       <div
         class="h-48 w-48 overflow-hidden rounded-t-full border-4 border-neutral-200/20 shadow-xl shadow-cyan-500/20 md:h-72 md:w-72 lg:h-80 lg:w-80 2xl:h-96 2xl:w-96"
