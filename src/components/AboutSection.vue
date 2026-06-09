@@ -1,11 +1,50 @@
 <script setup lang="ts"></script>
 
 <template>
-  <div class="flex min-h-screen items-center justify-center p-6">
-    <div class="max-w-sm text-center">
-      <h1 class="text-2xl font-bold tracking-tight text-neutral-400">Under Construction</h1>
+  <section
+    class="relative flex min-h-screen items-center justify-center md:pt-20 lg:pt-24 2xl:pt-0"
+  >
+    <div
+      class="mx-auto flex max-w-5xl flex-col items-center gap-8 p-4 lg:flex-row lg:gap-16 2xl:gap-20"
+    >
+      <div
+        class="h-64 w-64 overflow-hidden rounded-t-full border-4 border-neutral-200/20 shadow-xl shadow-cyan-500/20 md:h-72 md:w-72 lg:h-80 lg:w-80 2xl:h-96 2xl:w-96"
+      >
+        <img
+          src="@/assets/images/about.jpg"
+          alt="Portrait of Marina Dantis"
+          class="h-full w-full object-cover"
+        />
+      </div>
 
-      <p class="mt-2 text-sm text-gray-500">Building something new. Check back soon.</p>
+      <div class="flex flex-col gap-8">
+        <h2 class="text-2xl font-black md:text-5xl lg:text-4xl 2xl:text-5xl">About me</h2>
+
+        <div class="flex flex-col gap-6">
+          <p class="max-w-2xl text-sm leading-relaxed text-neutral-400 lg:text-base 2xl:text-lg">
+            I'm Marina, a web developer specializing in HTML, CSS, JavaScript, and modern frameworks
+            like Vue.js and TailwindCSS. I enjoy building clean, scalable, and user-focused digital
+            experiences that combine thoughtful design with reliable engineering.
+          </p>
+
+          <p class="max-w-2xl text-sm leading-relaxed text-neutral-400 lg:text-base 2xl:text-lg">
+            I work at the intersection of product and engineering - simplifying workflows, improving
+            efficiency, and delivering features from ideation to production. From system design and
+            implementation to iteration based on user feedback, I enjoy owning the full journey and
+            building solutions that feel intuitive, purposeful, and dependable.
+          </p>
+        </div>
+
+        <div class="pt-3">
+          <a
+            href="#contact"
+            class="inline-flex transform items-center gap-1 rounded-xl bg-linear-to-r from-blue-500 via-cyan-400 to-teal-400 px-6 py-3 text-sm font-semibold text-white transition-all duration-100 ease-out hover:scale-105 active:scale-95"
+          >
+            <span> Contact me </span>
+            <!-- TODO: update active link as contact to mark it as active when clicked -->
+          </a>
+        </div>
+      </div>
     </div>
-  </div>
+  </section>
 </template>

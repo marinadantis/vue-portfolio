@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { ref } from 'vue'
-
-const navLinks = [
-  { name: 'Home', href: '#home' },
-  { name: 'About', href: '#about' },
-  { name: 'Services', href: '#services' },
-  { name: 'Skills', href: '#skills' },
-  { name: 'Projects', href: '#projects' },
-]
+import MobileMenu from './MobileMenu.vue'
+import { NAV_LINKS, CONTACT_LINK } from '@/constants/navigation'
 
 const activeLink = ref('#home')
+const isMenuOpen = ref(false)
+
+function handleUpdateLink(newLink: string) {
+  activeLink.value = newLink
+  isMenuOpen.value = false
+}
 </script>
 
 <template>
@@ -31,9 +31,9 @@ const activeLink = ref('#home')
       </a>
 
       <!-- Navigation Links -->
-      <div class="flex gap-4 text-sm">
+      <div class="hidden gap-4 text-sm lg:flex">
         <a
-          v-for="link in navLinks"
+          v-for="link in NAV_LINKS"
           :key="link.href"
           :href="link.href"
           @click="activeLink = link.href"
@@ -49,19 +49,62 @@ const activeLink = ref('#home')
       </div>
 
       <!-- CTA Button -->
-      <div>
+      <div class="hidden lg:block">
         <a
-          href="#contact"
-          @click="activeLink = '#contact'"
+          :href="CONTACT_LINK.href"
+          @click="activeLink = CONTACT_LINK.href"
           :class="[
             'inline-flex rounded-lg px-4 py-2 text-sm font-medium text-black transition-all duration-200 hover:scale-105 hover:bg-neutral-400 active:scale-95',
-            activeLink === '#contact'
+            activeLink === CONTACT_LINK.href
               ? 'bg-linear-to-r from-blue-500 via-cyan-400 to-teal-400'
               : 'bg-neutral-100',
           ]"
-          >Contact</a
+          >{{ CONTACT_LINK.name }}</a
         >
       </div>
+
+      <!-- Mobile Menu Button -->
+      <button
+        @click="isMenuOpen = !isMenuOpen"
+        type="button"
+        class="inline-flex h-10 w-10 transform items-center justify-center rounded-xl border border-neutral-800 bg-neutral-800 text-neutral-400 transition-all duration-150 ease-out hover:scale-105 hover:border-cyan-400 hover:text-cyan-400 active:scale-95 lg:hidden"
+        :aria-expanded="isMenuOpen"
+        aria-label="Toggle navigation menu"
+      >
+        <!-- 1. HAMBURGER MENU ICON (Shows when menu is CLOSED) -->
+        <svg
+          v-if="!isMenuOpen"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-5 w-5"
+        >
+          <line x1="4" y1="12" x2="20" y2="12" />
+          <line x1="4" y1="6" x2="20" y2="6" />
+          <line x1="4" y1="18" x2="20" y2="18" />
+        </svg>
+
+        <!-- 2. CLOSE (X) ICON (Shows when menu is OPEN) -->
+        <svg
+          v-else
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2.5"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-5 w-5"
+        >
+          <line x1="18" y1="6" x2="6" y2="18" />
+          <line x1="6" y1="6" x2="18" y2="18" />
+        </svg>
+      </button>
     </div>
   </nav>
+
+  <!-- Mobile Menu -->
+  <MobileMenu v-if="isMenuOpen" :active-link="activeLink" @update:active-link="handleUpdateLink" />
 </template>
