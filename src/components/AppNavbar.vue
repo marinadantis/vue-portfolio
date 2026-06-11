@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import MobileMenu from './MobileMenu.vue'
-import { NAV_LINKS, CONTACT_LINK } from '@/constants/navigation'
+import { NAV_LINKS, CONTACT_LINK } from '@/constants'
 
 const activeLink = ref('#home')
 const isMenuOpen = ref(false)

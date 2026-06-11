@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { NAV_LINKS, CONTACT_LINK } from '@/constants/navigation'
+import { NAV_LINKS, CONTACT_LINK } from '@/constants'
 
 const emits = defineEmits(['update:activeLink'])
 

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { CONTACT_LINK } from '@/constants/navigation'
+import { CONTACT_LINK } from '@/constants'
 </script>
 
 <template>
