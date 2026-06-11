@@ -16,7 +16,7 @@ export const PROJECTS: Project[] = [
       'A lightweight web application that standardizes corporate branding by enabling employees to instantly generate clean, compliant email signatures.',
     imageSrc: '/assets/images/signature-builder.png',
     technologies: ['HTML5', 'CSS3', 'Vanilla JavaScript'],
-    liveDemoLink: 'https://hellochef-signature-builder.vercel.app/',
+    liveDemoLink: 'https://hellochef-signature-builder.vercel.app',
     githubLink: 'https://github.com/marinadantis/hellochef-signature',
   },
   {
@@ -24,8 +24,8 @@ export const PROJECTS: Project[] = [
     description:
       'A minimalist, responsive showcase portfolio app built entirely with native web standards, demonstrating deep mastery of core front-end technologies without heavy framework overhead.',
     imageSrc: '/assets/images/portfolio-desktop.png',
-    technologies: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Mobile-First Design',],
-    liveDemoLink: 'https://hellochef-signature-builder.vercel.app/',
-    githubLink: 'https://github.com/marinadantis/hellochef-signature',
+    technologies: ['HTML5', 'CSS3', 'JavaScript (ES6+)', 'Mobile-First Design'],
+    liveDemoLink: 'https://marina-dantis-portfolio.vercel.app',
+    githubLink: 'https://github.com/marinadantis/frontend-foundations',
   },
 ]
