@@ -2,14 +2,53 @@
 import { ref } from 'vue'
 import MobileMenu from './MobileMenu.vue'
 import { NAV_LINKS, CONTACT_LINK } from '@/constants'
+import { onMounted, onUnmounted } from 'vue'
 
+const allLinks = [...NAV_LINKS, CONTACT_LINK]
 const activeLink = ref('#home')
 const isMenuOpen = ref(false)
+const isScrollingClick = ref(false) // The lock flag variable
+
+let observer: IntersectionObserver | null = null
+
+onMounted(() => {
+  observer = new IntersectionObserver(
+    (entries) => {
+      if (isScrollingClick.value) return
+
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          activeLink.value = `#${entry.target.id}`
+        }
+      })
+    },
+    {
+      rootMargin: '-30% 0px -60% 0px', // Highlighting updates cleanly near top of viewport
+    },
+  )
+
+  // Start watching every section element by its target ID string
+  allLinks.forEach((link) => {
+    const id = link.href.replace('#', '')
+    const element = document.getElementById(id)
+    if (element) observer?.observe(element)
+  })
+})
 
 function handleUpdateLink(newLink: string) {
   activeLink.value = newLink
   isMenuOpen.value = false
+  isScrollingClick.value = true // Activate lock
+
+  // Turn the lock off automatically once the smooth scroll finishes
+  setTimeout(() => {
+    isScrollingClick.value = false
+  }, 800)
 }
+
+onUnmounted(() => {
+  observer?.disconnect()
+})
 </script>
 
 <template>
@@ -21,7 +60,7 @@ function handleUpdateLink(newLink: string) {
       <a
         href="#home"
         class="group text-2xl font-black tracking-tighter"
-        @click="activeLink = '#home'"
+        @click="handleUpdateLink('#home')"
       >
         <span
           class="bg-linear-to-r from-blue-500 via-cyan-400 to-teal-400 bg-clip-text text-transparent transition-all duration-300 group-hover:opacity-80"
@@ -36,7 +75,7 @@ function handleUpdateLink(newLink: string) {
           v-for="link in NAV_LINKS"
           :key="link.href"
           :href="link.href"
-          @click="activeLink = link.href"
+          @click="handleUpdateLink(link.href)"
           :class="[
             'rounded-lg px-3 py-2 transition-all duration-200',
             activeLink === link.href
