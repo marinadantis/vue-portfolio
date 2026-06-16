@@ -7,7 +7,7 @@ import ProjectCard from './ProjectCard.vue'
   <section
     class="relative flex min-h-fit flex-col items-center justify-center py-22 md:min-h-screen md:py-0 md:pt-24 2xl:gap-6 2xl:pt-0"
   >
-    <div class="mx-auto flex max-w-4xl flex-col items-center p-4 text-center md:gap-2 2xl:gap-6">
+    <div class="mx-auto flex max-w-2xl flex-col items-center p-4 text-center md:gap-2 2xl:gap-6">
       <h2 class="text-3xl font-black md:text-5xl lg:text-4xl 2xl:text-5xl">Projects</h2>
       <p class="mt-2 p-4 text-sm leading-relaxed text-neutral-400 md:p-0">
         A selection of personal and learning-focused projects where I explored frontend development,
@@ -22,10 +22,10 @@ import ProjectCard from './ProjectCard.vue'
         :key="project.title"
         :title="project.title"
         :description="project.description"
-        :imageSrc="project.imageSrc"
+        :image-src="project.imageSrc"
         :technologies="project.technologies"
-        :liveDemoLink="project.liveDemoLink"
-        :githubLink="project.githubLink"
+        :live-demo-link="project.liveDemoLink"
+        :github-link="project.githubLink"
       />
     </div>
   </section>

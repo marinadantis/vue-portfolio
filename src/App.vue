@@ -3,7 +3,6 @@ import AppFooter from '@/components/AppFooter.vue'
 import AppNavbar from '@/components/AppNavbar.vue'
 import HeroSection from '@/components/HeroSection.vue'
 import AboutSection from '@/components/AboutSection.vue'
-import ServicesSection from '@/components/ServicesSection.vue'
 import SkillsSection from '@/components/SkillsSection.vue'
 import ProjectsSection from '@/components/ProjectsSection.vue'
 import ContactSection from '@/components/ContactSection.vue'
@@ -18,7 +17,6 @@ import ContactSection from '@/components/ContactSection.vue'
     <main class="grow">
       <HeroSection id="home" />
       <AboutSection id="about" />
-      <ServicesSection id="services" />
       <SkillsSection id="skills" />
       <ProjectsSection id="projects" />
       <ContactSection id="contact" />

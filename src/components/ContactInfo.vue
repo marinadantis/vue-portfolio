@@ -94,7 +94,7 @@
       </div>
     </div>
 
-    <div class="flex flex-col gap-3 border-t border-neutral-800 pt-6">
+    <div class="flex flex-col gap-3 border-t border-neutral-800/60 pt-6">
       <h4 class="text-xs font-semibold tracking-wider text-neutral-500 uppercase">
         Connect with me
       </h4>

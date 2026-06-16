@@ -70,7 +70,7 @@ onUnmounted(() => {
       </a>
 
       <!-- Navigation Links -->
-      <div class="hidden gap-4 text-sm lg:flex">
+      <div class="hidden gap-6 text-sm lg:flex">
         <a
           v-for="link in NAV_LINKS"
           :key="link.href"
@@ -106,7 +106,7 @@ onUnmounted(() => {
       <button
         @click="isMenuOpen = !isMenuOpen"
         type="button"
-        class="inline-flex h-10 w-10 transform items-center justify-center rounded-xl border border-neutral-800 bg-neutral-800 text-neutral-400 transition-all duration-150 ease-out hover:scale-105 hover:border-cyan-400 hover:text-cyan-400 active:scale-95 lg:hidden"
+        class="inline-flex h-10 w-10 transform items-center justify-center rounded-xl border border-neutral-800 bg-neutral-800 text-neutral-400 transition-all duration-150 ease-out hover:scale-105 hover:border-cyan-500/50 hover:text-cyan-500 active:scale-95 lg:hidden"
         :aria-expanded="isMenuOpen"
         aria-label="Toggle navigation menu"
       >

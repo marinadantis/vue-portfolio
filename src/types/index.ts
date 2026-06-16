@@ -1,2 +1,3 @@
 export * from './navigation'
-export * from './projects'
+export * from './project'
+export * from './skill'
