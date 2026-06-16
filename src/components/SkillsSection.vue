@@ -28,5 +28,33 @@ import { SKILLS_DATA } from '@/constants'
         :skill-styles="category.skillStyles"
       />
     </div>
+
+    <div
+      class="m-4 flex max-w-2xl items-center justify-center gap-1 rounded-lg border border-neutral-800/40 bg-neutral-900/60 px-3 py-2 text-center text-sm text-neutral-400 shadow-sm"
+    >
+      <svg
+        class="h-4 w-4 text-cyan-400/50"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        />
+      </svg>
+      <p class="text-left leading-relaxed sm:text-center">
+        Always learning, always building. Exploring new technologies to solve real-world problems
+      </p>
+      <svg
+        class="h-4 w-4 text-cyan-400/50"
+        viewBox="0 0 24 24"
+        fill="currentColor"
+        aria-hidden="true"
+      >
+        <path
+          d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"
+        />
+      </svg>
+    </div>
   </section>
 </template>
