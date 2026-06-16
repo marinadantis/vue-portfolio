@@ -65,8 +65,8 @@ export const SKILLS_DATA: SkillCategory[] = [
       'Grafana',
     ],
     categoryStyles:
-      'border border-emerald-500/50 hover:border-emerald-400 hover:shadow-emerald-500/10 hover:shadow-xl hover:bg-emerald-500/[0.01] hover:scale-102',
-    skillStyles: 'border border-emerald-500/10 bg-emerald-500/10 text-emerald-300',
+      'border border-purple-500/50 hover:border-purple-400 hover:shadow-purple-500/10 hover:shadow-xl hover:bg-purple-500/[0.01] hover:scale-102',
+    skillStyles: 'border border-purple-500/10 bg-purple-500/10 text-purple-300',
   },
   {
     category: 'AI-Assisted Development',
@@ -81,8 +81,8 @@ export const SKILLS_DATA: SkillCategory[] = [
       'Code Generation',
     ],
     categoryStyles:
-      'border border-purple-500/50 hover:border-purple-400 hover:shadow-purple-500/10 hover:shadow-xl hover:bg-purple-500/[0.01] hover:scale-102',
-    skillStyles: 'border border-purple-500/10 bg-purple-500/10 text-purple-300',
+      'border border-emerald-500/50 hover:border-emerald-400 hover:shadow-emerald-500/10 hover:shadow-xl hover:bg-emerald-500/[0.01] hover:scale-102',
+    skillStyles: 'border border-emerald-500/10 bg-emerald-500/10 text-emerald-300',
   },
   {
     category: 'Tools & Collaboration',
