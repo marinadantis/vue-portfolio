@@ -20,12 +20,7 @@ import ProjectCard from './ProjectCard.vue'
       <ProjectCard
         v-for="project in PROJECTS"
         :key="project.title"
-        :title="project.title"
-        :description="project.description"
-        :image-src="project.imageSrc"
-        :technologies="project.technologies"
-        :live-demo-link="project.liveDemoLink"
-        :github-link="project.githubLink"
+        v-bind="project"
       />
     </div>
   </section>

@@ -18,15 +18,7 @@ import { SKILLS_DATA } from '@/constants'
     <div
       class="mx-auto grid w-full max-w-6xl grid-cols-1 flex-wrap justify-items-center gap-6 p-4 md:grid-cols-2 lg:grid-cols-3"
     >
-      <SkillCard
-        v-for="category in SKILLS_DATA"
-        :key="category.category"
-        :category="category.category"
-        :description="category.description"
-        :skills="category.skills"
-        :category-styles="category.categoryStyles"
-        :skill-styles="category.skillStyles"
-      />
+      <SkillCard v-for="category in SKILLS_DATA" :key="category.category" v-bind="category" />
     </div>
 
     <div
