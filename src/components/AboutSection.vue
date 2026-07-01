@@ -28,20 +28,20 @@ import { CONTACT_LINK } from '@/constants'
 
         <div class="flex flex-col gap-4">
           <p
-            class="max-w-xl text-sm md:leading-relaxed text-neutral-400 md:max-w-2xl lg:text-base 2xl:text-lg"
+            class="max-w-xl text-sm text-neutral-400 md:max-w-2xl md:leading-relaxed lg:text-base 2xl:text-lg"
           >
-            I'm Marina, a web developer specializing in HTML, CSS, JavaScript, and modern frameworks
-            like Vue.js and TailwindCSS. I enjoy building clean, scalable, and user-focused digital
-            experiences that combine thoughtful design with reliable engineering.
+            I am Marina, a web developer specializing in Vue, React, JavaScript, Typescript,
+            Tailwind CSS, HTML and CSS. I build clean, scalable, and user-focused digital
+            experiences by combining thoughtful design with reliable engineering.
           </p>
 
           <p
-            class="max-w-xl text-sm md:leading-relaxed text-neutral-400 md:max-w-2xl lg:text-base 2xl:text-lg"
+            class="max-w-xl text-sm text-neutral-400 md:max-w-2xl md:leading-relaxed lg:text-base 2xl:text-lg"
           >
-            I work at the intersection of product and engineering - simplifying workflows, improving
-            efficiency, and delivering features from ideation to production. From system design and
-            implementation to iteration based on user feedback, I enjoy owning the full journey and
-            building solutions that feel intuitive, purposeful, and dependable.
+            Operating at the intersection of product and engineering, I simplify workflows, improve
+            efficiency, and deliver features from ideation to production. I manage the full project
+            lifecycle including system design, implementation, and feedback-driven iteration to
+            build solutions that are intuitive, purposeful, and dependable.
           </p>
         </div>
 
