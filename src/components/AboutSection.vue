@@ -51,7 +51,6 @@ import { CONTACT_LINK } from '@/constants'
             class="inline-flex transform items-center gap-1 rounded-xl bg-linear-to-r from-blue-500 via-cyan-400 to-teal-400 px-6 py-3 text-sm font-semibold text-white transition-all duration-100 ease-out hover:scale-105 active:scale-95"
           >
             <span> Contact me </span>
-            <!-- TODO: update active link as contact to mark it as active when clicked -->
           </a>
         </div>
       </div>
