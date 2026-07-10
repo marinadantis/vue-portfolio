@@ -11,6 +11,24 @@ export const PROJECTS: Project[] = [
     githubLink: '',
   },
   {
+    title: 'Price Passport',
+    description:
+      'A dynamic, data-driven web application designed to track, compare, and analyze shifting market prices across multiple regions with an intuitive interface.',
+    imageSrc: '/assets/images/price-passport.png',
+    technologies: ['React', 'Tailwind CSS', 'TypeScript', 'Mobile-First Design'],
+    liveDemoLink: 'https://price-passport.vercel.app',
+    githubLink: 'https://github.com/marinadantis/price-passport',
+  },
+  {
+    title: 'Vue3 Developer Hub',
+    description:
+      'A highly optimized, component-driven digital resume featuring smooth state transitions, dark mode themed, and structured project filtering.',
+    imageSrc: '/assets/images/vue-portfolio.png',
+    technologies: ['Vue3', 'Tailwind CSS', 'TypeScript', 'Mobile-First Design'],
+    liveDemoLink: 'https://marina-dantis.vercel.app',
+    githubLink: 'https://github.com/marinadantis/vue-portfolio',
+  },
+  {
     title: 'Hello Chef Signature Builder',
     description:
       'A lightweight web application that standardizes corporate branding by enabling employees to instantly generate clean, compliant email signatures.',
